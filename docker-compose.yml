@@ -17,7 +17,7 @@ services:
             - "80"
         labels:
             com.microsoft.acs.dcos.marathon.healthcheck.path: '/'
-
+            app: 'serviceB'     
     mycache:
         image: redis:alpine
         expose:
